@@ -1,0 +1,31 @@
+package vererbung;
+
+public class Screen extends ElectronicDevice {
+    public int getResolutionx() {
+        return resolutionx;
+    }
+
+    public void setResolutionx(int resolutionx) {
+        this.resolutionx = resolutionx;
+    }
+
+    public int getResolutiony() {
+        return resolutiony;
+    }
+
+    public void setResolutiony(int resolutiony) {
+        this.resolutiony = resolutiony;
+    }
+
+    public int getInch() {
+        return inch;
+    }
+
+    public void setInch(int inch) {
+        this.inch = inch;
+    }
+
+    int resolutionx;
+    int resolutiony;
+    int inch;
+}

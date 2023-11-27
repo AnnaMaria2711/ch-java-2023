@@ -7,6 +7,11 @@ public class Headset extends ElectronicDevice implements CanBeHiFi {
     }
 
     @Override
+    public boolean getHifi() {
+        return false;
+    }
+
+    @Override
     public void setHifi(boolean hifi) {
         this.hifi = hifi;
     }

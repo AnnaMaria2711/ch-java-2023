@@ -15,6 +15,9 @@ public class inheritance {
         smartTv.setResolutiony(2160);
 
         printElectronicDevice(smartTv);
+
+        CanBeHiFi something = smartTv;
+        something.setHifi(true);
     }
 
     public static void printElectronicDevice(ElectronicDevice a){

@@ -1,6 +1,6 @@
 package vererbung;
 
-public class Screen extends ElectronicDevice {
+public class Screen extends ElectronicDevice implements CanBeHiFi {
     public int getResolutionx() {
         return resolutionx;
     }
@@ -25,7 +25,18 @@ public class Screen extends ElectronicDevice {
         this.inch = inch;
     }
 
-    int resolutionx;
-    int resolutiony;
-    int inch;
+    private int resolutionx;
+    private int resolutiony;
+    private int inch;
+
+    public boolean isHifi() {
+        return hifi;
+    }
+
+    @Override
+    public void setHifi(boolean hifi) {
+        this.hifi = hifi;
+    }
+
+    private boolean hifi;
 }

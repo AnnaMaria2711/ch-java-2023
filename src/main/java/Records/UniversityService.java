@@ -1,16 +1,16 @@
 package Records;
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-@RequiredArgsConstructor
+
 @Getter
 @Setter
+@Builder
 public class UniversityService {
 
-    private final String student1;
-    private final String students;
+    @With
+    private final Student student1;
+    private final Student student2;
     private int price;
 
 

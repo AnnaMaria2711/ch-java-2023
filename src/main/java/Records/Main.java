@@ -3,9 +3,6 @@ package Records;
 public class Main {
     public static void main(String[] args) {
 
-        UniversityService a = new UniversityService("a","b");
-        a.setPrice(6888);
-
         Animals animals = new Animals(4,true, "black");
 
         System.out.println(animals);
@@ -18,5 +15,14 @@ public class Main {
         System.out.println(x);
         Student y = x.withName("kdfgjflgkjsdm$kglsjfllölsfgklhjsdähld");
         System.out.println(y);
+
+        UniversityService us =UniversityService.builder()
+                .student1(x)
+                .student2(y)
+                .price(2347)
+                .build();
+        System.out.println(us);
+
+
     }
 }

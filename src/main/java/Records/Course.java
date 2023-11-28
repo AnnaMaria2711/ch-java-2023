@@ -8,5 +8,6 @@ import lombok.With;
 @Builder
 public class Course {
     @With
-
+    int id;
+    int credits;
 }

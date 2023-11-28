@@ -23,6 +23,16 @@ public class Main {
                 .build();
         System.out.println(us);
 
+        Course english= Course.builder()
+                .id(166380083)
+                .build();
 
+        Course french= Course.builder()
+                .id(1663234444)
+                .build();
     }
 }
+
+
+
+
